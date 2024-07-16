@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { IconPrefix, IconName } from '@fortawesome/fontawesome-svg-core'
+import { IconName } from '@fortawesome/fontawesome-svg-core'
 import { Dialog, Transition } from '@headlessui/react'
 import toast, { Toaster } from 'react-hot-toast'
 import { useHotkeys } from 'react-hotkeys-hook'
@@ -90,7 +90,7 @@ const Navbar = () => {
           <SwitchLang />
 
           {siteConfig.links.length !== 0 &&
-            siteConfig.links.map((l: { name: string; link: string; icon: string; fa: string }) => (
+            siteConfig.links.map((l: { name: string; link: string; icon: string; }) => (
               <a
                 key={l.name}
                 href={l.link}
@@ -98,8 +98,7 @@ const Navbar = () => {
                 rel="noopener noreferrer"
                 className="flex items-center space-x-2 hover:opacity-80 dark:text-white"
               >
-                {/* <FontAwesomeIcon icon={[l.fa as IconPrefix, l.icon as IconName]} /> */}
-                <FontAwesomeIcon icon={['fas', 'house-user']} />
+                <FontAwesomeIcon icon={['fab', l.icon as IconName]} />
                 <span className="hidden text-sm font-medium md:inline-block">
                   {
                     // Append link name comments here to add translations
