@@ -55,11 +55,13 @@ module.exports = {
       name: 'GitHub',
       link: 'https://github.com/SilhouettesForYou',
       icon: "github",
+      fa: "fab"
     },
     {
       name: 'Index',
       link: 'https://silhouettesforyou.github.io',
       icon: "house-user",
+      fa: "fas"
     },
   ],
 

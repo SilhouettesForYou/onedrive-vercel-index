@@ -90,7 +90,7 @@ const Navbar = () => {
           <SwitchLang />
 
           {siteConfig.links.length !== 0 &&
-            siteConfig.links.map((l: { name: string; link: string; icon: string }) => (
+            siteConfig.links.map((l: { name: string; link: string; icon: string; fa: string }) => (
               <a
                 key={l.name}
                 href={l.link}
@@ -98,7 +98,7 @@ const Navbar = () => {
                 rel="noopener noreferrer"
                 className="flex items-center space-x-2 hover:opacity-80 dark:text-white"
               >
-                <FontAwesomeIcon icon={['fab', l.icon.toLowerCase() as IconName]} />
+                <FontAwesomeIcon icon={[l.fa, l.icon.toLowerCase() as IconName]} />
                 <span className="hidden text-sm font-medium md:inline-block">
                   {
                     // Append link name comments here to add translations
