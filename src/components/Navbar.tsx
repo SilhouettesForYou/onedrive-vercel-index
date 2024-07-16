@@ -98,7 +98,7 @@ const Navbar = () => {
                 rel="noopener noreferrer"
                 className="flex items-center space-x-2 hover:opacity-80 dark:text-white"
               >
-                <FontAwesomeIcon icon={[l.fa as IconPrefix, l.icon.toLowerCase() as IconName]} />
+                <FontAwesomeIcon icon={[l.fa as IconPrefix, l.icon as IconName]} />
                 <span className="hidden text-sm font-medium md:inline-block">
                   {
                     // Append link name comments here to add translations
