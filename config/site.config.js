@@ -17,7 +17,7 @@ module.exports = {
   kvPrefix: process.env.KV_PREFIX || '',
 
   // The name of your website. Present alongside your icon.
-  title: "Xiaoming's OneDrive",
+  title: "📔",
 
   // The folder that you are to share publicly with onedrive-vercel-index. Use '/' if you want to share your root folder.
   baseDirectory: '/Public',
@@ -54,10 +54,12 @@ module.exports = {
     {
       name: 'GitHub',
       link: 'https://github.com/SilhouettesForYou',
+      icon: "github",
     },
     {
-      name: 'House',
+      name: 'Index',
       link: 'https://silhouettesforyou.github.io',
+      icon: "house-user",
     },
   ],
 
